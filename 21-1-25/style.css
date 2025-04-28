@@ -1,0 +1,33 @@
+.navbar{
+    background-color: red !important;
+}
+
+.btn{
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.navbar-nav{
+    background-color: purple;
+}
+
+.container{
+    background-color: green;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.myitem{
+    background-color: pink;
+}
+
+.mycard{
+    border: 3px solid red;
+}

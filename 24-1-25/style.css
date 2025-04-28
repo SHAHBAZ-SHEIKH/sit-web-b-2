@@ -1,0 +1,138 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: gray!important;
+    padding: 20px 20px;
+}
+
+.navbar-nav{
+    font-size: 17px;
+    color: white !important;
+}
+.navbar-nav li a{
+    color: white;
+}
+
+.banner{
+    background-image: url("file:///E:/SMIT%2011/CSS/Food%20website/image/back5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.bannerText{
+   
+    text-align: center;
+    padding-top: 150px;
+}
+
+.bannerText h3{
+    font-size: 50px;
+    color: yellow;
+}
+
+.banner p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.container{
+   
+    margin-top: 20px;
+}
+
+.bookTable h2{
+    text-align: center;
+}
+
+.parentCard{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.CardHead h3{
+    font-size: 35px;
+}
+
+.cardPara p{
+    font-size: 22px;
+    color: black;
+}
+
+.formElement{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+input{
+    width: 300px;
+    padding: 10px 15px;
+}
+
+#about{
+    margin-top: 20px;
+}
+
+
+
+.aboutHead h2{
+    text-align: center;
+}
+
+
+.parentAbout{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.navbar{
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 1;
+}
+
+.cardAboutPara p{
+    font-size: 25px;
+}
+
+#featureColor{
+    background-color: purple;
+}
+
+
+@media(max-width:600px) {
+
+    .banner{
+        background-image: url("file:///E:/SMIT%2011/CSS/Food%20website/image/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;    
+        height: 100vh;
+    }
+    .bannerText h3{
+        font-size: 30px;
+        color: yellow;
+    }
+
+}
