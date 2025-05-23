@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #userImage{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .displayImage{
+            display: flex;
+
+        }
+
+        #userPostIamge{
+            width: 200px;
+            height: 200px;
+        }
+        .post{
+            box-shadow: 10px 10px 10px black;
+            width: 300px;
+            padding-top: 30px;
+        }
+
+        
+    </style>
 </head>
 <body>
 
     <h1>Welcome to DashBoard</h1>
+
+    <div class="displayImage">
+        <img src="" alt="" id="userImage">
+        <h2 id="username">Hi ,username</h2>
+    </div>
+    <div class="postinput">
+        <input type="text" id="postValue" placeholder="Whats on Your Mind">
+        <input type="text" id="postImage" placeholder="Enter Your image Url">
+        <button id="postCreate">Post Create</button>
+    </div>
+
+    <div class="postCreate">
+
+        <div class="post">
+            <p>Heelo</p>
+            <img id="userPostIamge" src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0f/5e/84/76/count-the-jeeps-on-lake.jpg" alt="">
+        </div>
+
+    </div>
 
     <script src="app.js"></script>
     

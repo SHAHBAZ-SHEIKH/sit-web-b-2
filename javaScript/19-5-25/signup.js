@@ -49,10 +49,12 @@ document.getElementById("signup").addEventListener("submit",function(e){
     var email = document.getElementById("userEmail").value
     var password = document.getElementById("userPassword").value
     var confirmPassword = document.getElementById("userConfirm").value
+    const profilePicture = document.getElementById("profilePicture").files[0]
+     console.log("profilePicture==>",profilePicture)
 
     console.log(name, email, password, confirmPassword);
 
-    var users = JSON.parse(localStorage.getItem("users")) || [];
+    var users = JSON.parse(localStorage.getItem("uservalue")) || [];
 
     var emailExsts = users.find(function(user){
         return user.email === email;
@@ -81,16 +83,33 @@ document.getElementById("signup").addEventListener("submit",function(e){
         return;
     }
 
-    var user = {
-        name: name,
-        email: email,
-        password: password
-    }
+    // var user = {
+    //     name: name,
+    //     email: email,
+    //     password: password
+    // }
 
-    users.push(user);
+    const reader = new FileReader();
+  reader.onload = function(e) {
+      const imageUrl = e.target.result;
 
-    localStorage.setItem("users",JSON.stringify(users));
-    alert('User signed up successfully!');
+      users.push({
+          username: name,
+          password: password,
+          email: email,
+          profilePicture: imageUrl,
+          
+      });
+
+      localStorage.setItem("uservalue", JSON.stringify(users));
+      alert("Sgnup Successfuly")
+
+      setTimeout(() => {
+          window.location.href = "login.html";
+      }, 2000);
+  }
+
+  reader.readAsDataURL(profilePicture);
     
 
 
