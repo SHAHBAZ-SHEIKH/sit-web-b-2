@@ -1,6 +1,6 @@
 
 
-var loginUser = JSON.parse(localStorage.getItem("loginInUser")) || [];
+var loginUser = JSON.parse(localStorage.getItem("loginInUser")) 
 console.log("loginUser=====>",loginUser)
 
 if(!loginUser){

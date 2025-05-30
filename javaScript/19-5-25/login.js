@@ -1,4 +1,5 @@
 
+var users = JSON.parse(localStorage.getItem("uservalue")) 
 
 document.getElementById("loginHandler").addEventListener("submit",function(e){
     e.preventDefault()
@@ -6,8 +7,7 @@ document.getElementById("loginHandler").addEventListener("submit",function(e){
     var email = document.getElementById("userEmail").value
     var password = document.getElementById("userPassword").value
 
-    var users = JSON.parse(localStorage.getItem("uservalue")) || [];
-
+    
     var userget = users.find((item)=>{
         return item.email == email && item.password == password
     })

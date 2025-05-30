@@ -54,7 +54,9 @@ document.getElementById("signup").addEventListener("submit",function(e){
 
     console.log(name, email, password, confirmPassword);
 
-    var users = JSON.parse(localStorage.getItem("uservalue")) || [];
+    var users = JSON.parse(localStorage.getItem("uservalue")) || [] 
+
+    
 
     var emailExsts = users.find(function(user){
         return user.email === email;
